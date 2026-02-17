@@ -1,0 +1,29 @@
+{
+  "name": "forge/blocks",
+  "description": "Forge Blocks - modular Gutenberg landing page builder",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "php": ">=8.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0",
+    "squizlabs/php_codesniffer": "^3.10",
+    "wp-coding-standards/wpcs": "^3.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Forge\\Blocks\\": "src/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit --configuration tests/phpunit/phpunit.xml",
+    "phpcs": "phpcs --standard=phpcs.xml src forge-blocks.php"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}
