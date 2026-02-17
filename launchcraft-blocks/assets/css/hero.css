@@ -1,0 +1,4 @@
+.lc-hero { padding: 64px 24px; background: #f7f8ff; }
+.lc-hero__title { font-family: var(--lc-heading-font); color: var(--lc-secondary-color); }
+.lc-hero__subtitle { max-width: 640px; margin: 16px auto; font-family: var(--lc-body-font); }
+.lc-hero__button { display: inline-block; background: var(--lc-primary-color); color: #fff; padding: 12px 20px; border-radius: 8px; text-decoration: none; }
