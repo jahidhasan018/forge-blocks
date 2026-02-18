@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "forge/hero",
+  "title": "Forge Hero",
+  "category": "design",
+  "icon": "cover-image",
+  "description": "Hero section with CTA and responsive controls.",
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "attributes": {
+    "title": { "type": "string", "default": "Build Better Landing Pages" },
+    "subtitle": { "type": "string", "default": "Compose high-converting sections with Forge blocks." },
+    "ctaText": { "type": "string", "default": "Get Started" },
+    "ctaUrl": { "type": "string", "default": "#" },
+    "textAlign": { "type": "string", "default": "center" },
+    "tabletTextAlign": { "type": "string", "default": "center" },
+    "mobileTextAlign": { "type": "string", "default": "left" },
+    "colorToken": { "type": "string", "default": "primary-color" }
+  },
+  "editorScript": "file:../../../build/blocks/hero/index.js",
+  "style": "file:../../../assets/css/hero.css"
+}

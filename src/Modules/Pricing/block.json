@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "forge/pricing",
+  "title": "Forge Pricing",
+  "category": "widgets",
+  "icon": "money-alt",
+  "description": "Pricing table block.",
+  "supports": { "html": false },
+  "attributes": {
+    "planName": { "type": "string", "default": "Starter" },
+    "price": { "type": "string", "default": "$29" },
+    "period": { "type": "string", "default": "/month" },
+    "buttonText": { "type": "string", "default": "Choose Plan" },
+    "features": { "type": "array", "default": ["Feature one", "Feature two"], "items": { "type": "string" } }
+  },
+  "editorScript": "file:../../../build/blocks/pricing/index.js",
+  "style": "file:../../../assets/css/pricing.css"
+}
