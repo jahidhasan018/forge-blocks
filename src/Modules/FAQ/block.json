@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "forge/faq",
+  "title": "Forge FAQ",
+  "category": "widgets",
+  "icon": "editor-help",
+  "description": "FAQ accordion block.",
+  "supports": { "html": false },
+  "attributes": {
+    "items": {
+      "type": "array",
+      "default": [
+        { "question": "How fast can I launch?", "answer": "Most teams launch in one day." }
+      ]
+    }
+  },
+  "editorScript": "file:../../../build/blocks/faq/index.js",
+  "style": "file:../../../assets/css/faq.css"
+}
